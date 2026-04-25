@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void hanoi(int n, char a, char b, char c) {
     if (n == 0) return;
 
@@ -7,7 +6,6 @@ void hanoi(int n, char a, char b, char c) {
     printf("Move disk %d from %c to %c\n", n, a, c);
     hanoi(n-1, b, a, c);
 }
-
 int main() {
     int n;
     printf("Enter number of disks: ");
